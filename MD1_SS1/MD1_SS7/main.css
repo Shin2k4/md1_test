@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px 50px 50px 50px;
+}
+
+nav {
+    width: 100%;
+    height: 38px;
+    background-color: #FFFFFF;
+}
+
+.content {
+    display: flex;
+    background-color: #FAFAFB;
+    margin-left: 50px;
+}
+
+.content1 {
+    width: 800px;
+    margin-top: 20px;
+    
+}
+
+.content1_content {
+    margin-top: 50px;
+}
+
+
+#card_number{
+    width: 280px;
+    height: 30px;
+    border-radius: 5px ;
+    border: solid 1px #3B71FE;
+    background-color: #FAFAFB;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+#card_number .fas{
+    padding-left: 120px;
+}
+#CVC {
+    padding-left: 130px;
+}
+.content1 #card{
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 5px;
+
+}
+#input{
+    width: 500px;
+    height: 25px;
+}
+#input input{
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+    border: 2px solid;
+    opacity: 50%;
+}
+#date{
+    
+    margin-left: 50px;
+}
+
+
+#text {
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 30px;
+    opacity: 100%;
+
+}
+
+.text-align {
+    opacity: 70%;
+}
+
+.traveller {
+    width: 350px;
+    height: 50px;
+    background-color: #F4F4F6;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
+.fa-pencil{
+    padding-left: 300px;
+}
+
+.traveller .p3 {
+    opacity: 50%;
+}
+
+.save {
+    display: flex;
+}
+
+#Confirm {
+    width: 200px;
+    height: 55px;
+    border-radius: 2rem;
+    background-color: #3B71FE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.left p {
+    width: 190px;
+    word-break: normal;
+}
+
+#sun {
+    width: 90px;
+    height: 22px;
+    display: flex;
+    background-color: #efdddd;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fa-sun {
+    width: 50px;
+    height: 22px;
+    background-color: #cdcde4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content2 {
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+    padding-left: 20px;
+    padding-top: 25px;
+    
+}
+.content2 h3{
+    padding-bottom: 10px;
+}
+
+.fa-star{
+    color: #FFC542;
+    padding-bottom: 20px;
+}
+img{
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+#check{
+    display: flex;
+    padding-bottom: 20px;
+    
+}
+span.text{
+    font-family: monospace;
+    opacity: 50%;
+    padding-bottom: 10px;
+}
+.content2 p.text{
+    opacity: 70%;
+    padding-bottom: 10px;
+    
+}
+.content2 h2{
+    margin-top: 20px;
+    padding-bottom: 30px;
+
+}
+#booked{
+    display: flex;
+    line-height: 30px;
+}
+#bill{
+    
+    padding-left: 200px;
+}
+#total{
+    width: 400px;
+    height: 30px;
+    background-color: #F4F5F6;
+    border-radius: 5px;
+    display: flex;
+}
+#total .identity{
+    padding-left: 310px;
+}
+#booked_p{
+    opacity: 50%;
+}
+#report{
+    text-align: center;
+    opacity: 50%;
+    margin-top: 20px;
+}
+
+#check #check_out{
+    margin-left: 150px;
+}
+#reviews{
+    opacity: 50%;
+}
+
+#check_in span{
+    opacity: 50%;
+}
+#check_out span {
+    opacity: 50%;
+}
+
+.content3 {
+    width: 1170px;
+    height: 250px;
+    margin-left: 50px;
+    background-image: url("https://lh3.googleusercontent.com/u/0/d/1BILANd6UXAgcXa6XAY2W_HLfrbqw2J7p=w1919-h892-iv1");
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFFFFF;
+
+}
+
+.content3 #input {
+    width: 333px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #FAFAFB;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #C8CBD5;
+}
+.content3 button{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 50px;
+    background-color: #353945;
+    color: #ffffff;
+}
+
+footer {
+    height: 200px;
+}
+
+.footer_content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+

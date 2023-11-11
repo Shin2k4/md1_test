@@ -1,0 +1,53 @@
+.test{
+    height: 200px;
+    background-color: #345B68;
+    display: flex;
+    color: white;
+}
+.start{
+    width: 10%;
+    height: 100%;
+}
+.test1{
+    width: 40%;
+    height: 100%;
+    background-color: #345B68;
+}
+.test2 {
+    width: 30%;
+    height: 100%;
+    background-color: #345B68;
+}
+.test3 {
+    width: 30%;
+    height: 100%;
+    background-color: #345B68;
+}
+.end{
+    width: 10%;
+    height: 100%; 
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    
+}
+.icon_box{
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    left: 5px;
+    /* align-items: center; */
+}
+.fa-facebook-f{
+    background-color: #3497DA;
+}
+.fa-google-plus-g{
+    background-color: #EC4B37;
+}
+.fa-linkedin-in{
+    background-color: #2E3D53;
+}
+.fa-twitter{
+    background-color: #2F9ADB;
+}

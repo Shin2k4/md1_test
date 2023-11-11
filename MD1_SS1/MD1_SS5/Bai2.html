@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        height: 100px;
+        padding-top: 60px;
+        padding-left: 100px;
+
+    }
+    line{
+        width: 50px;
+        height: 5px;
+        background-color: #0CB8B3;
+    }
+    .form{
+        height: 300px;
+        display: flex;
+        padding-left: 35px;
+    }
+    .info{
+        width: 40%;
+        height: 100%;
+        padding-top: 20px;
+        padding-left: 70px;
+    }
+    
+
+    input{
+        width: 500px;
+        height: 30px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        
+    }
+    #start::before{
+    content: "123";
+    color: red;
+
+    }
+        #start::after{
+        content: "555";
+        color: green;
+    }
+    #title{
+        position: relative;
+    }
+    #title::after{
+        display: block;
+        content: "";
+        width: 50px;
+        border-bottom: 2px solid orange;
+        position: absolute;
+        left: 0;
+    }
+    .Message{
+        padding-top: 20px;
+    }
+    .sms{
+        height: 70px;
+    }
+    button{
+        
+        background-color: #0CB8B3;
+        color: white;
+    }
+    .icon{
+        width: 30px;
+        height: 30px;
+        padding-top: 25px;
+        font-size: 25px;
+    }
+    p{
+        padding-left: 30px;
+    }
+</style>
+<body>
+    <nav>
+        <h1 id="title">CONTACT US</h1>
+        <div class="line"></div>
+    </nav>
+    <div class="form">
+        
+        <div class="info">
+            <h3>Contact Info</h3>
+            <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+                
+            </div>
+            <p>137B-137C Nguyễn Trãi, Phường Bến Thành, </p>
+            <p>Quận 1, Tp. Hồ Chí Minh</p>
+            <div class="icon">
+                <i class="far fa-envelope"></i>
+            </div>
+            <p>nguyentrai@dinky.com.vn</p>
+            <div class="icon">
+                <i class="fas fa-phone"></i>
+                
+            </div>
+            <p>0902 911 879</p>
+        </div>
+
+        <div class="Message">
+            <h3>Having Any Query! Or Book an Appointment</h3>
+            <input type="text" placeholder="Your Name"><br>
+            <input type="email" placeholder="Your Email"><br>
+            <input type="text" placeholder="Subject"><br>
+            <input class="sms" type="text" placeholder="Message"><br>
+            <button>Send Message</button>
+        </div>
+    </div>
+</body>
+</html>

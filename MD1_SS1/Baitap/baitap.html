@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  Cho 1 array student
+ Thiết kế các trường để làm tính năng sau   
+ Render table student 
+Khi bấm vào cột age thì sắp xếp lại thứ tự render từ thấp đến cao (follow age)
+Viết các hàm thêm, sửa, xóa
+-->
+    <form onsubmit="addStudents(event)">
+        <div>
+            ID học sinh mới: <input type="text" name="id">
+        </div>
+        <div>
+            Tên học sinh mới: <input type="text" name="name">
+        </div>
+        <div>
+            Tuổi học sinh mới: <input type="text" name="age">
+        </div>
+        <div>
+            Giới tính học sinh mới: <input type="text" name="sex">
+        </div>
+        <div>
+            <button type="submit">thêm hs mới</button>
+        </div>
+    </form>
+    <table id="tbData">
+
+        <!-- <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Giới tính</th>
+        </tr>
+    </thead>
+     <tbody>
+        <tr>
+            <td>01</td>
+            <td>Duy</td>
+            <td>20</td>z
+            <td>Nam</td>
+            <td>
+                <button>thêm</button>
+                <button>sửa</button>
+                <button>xoá</button>
+
+            </td>
+        </tr>
+    </tbody>  -->
+    </table>
+
+
+
+    <script>
+        var listStudents = [
+            {
+                id: Date.now() * Math.random(),
+                name: "duy",
+                age: "20",
+                sex: true // true = nam , fale = nữ
+            },
+            {
+                id: Date.now() * Math.random(),
+                name: "linh",
+                age: "22",
+                sex: false // true = nam , fale = nữ
+            },
+        ];
+        function renderStudents(listStudents) {
+            let students = `
+            <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Tuổi</th>
+                <th>Giới tính</th>
+            </tr>
+        `
+            for (let i in listStudents) {
+                students += `
+                <tbody id="tBody">
+
+                    <tr>
+                        <td>${Number(i) + 1}</td>
+                        <td>${listStudents[i].name}</td>
+                        <td>${listStudents[i].age}</td>
+                        <td>${listStudents[i].sex ? "nam" : "nữ"}</td>
+                        <td>
+                            <button onclick="handleDeleteStudents(${listStudents[i].id})" type ="button">xoá</button>
+                            <button onclick="handleUpdateStudent(${listStudents[i].id})" type ="button">sửa</button>
+                            
+                        </td>
+                    </tr>
+                </tbody> 
+
+            `
+            }
+            document.getElementById("tbData").innerHTML = students;
+        }
+        renderStudents(listStudents);
+
+
+
+        function handleArrangeStudents(event) {
+            console.log("da vao",listStudents);
+            event.preventDefault();
+            let newStudent = {
+                id: Date.now() * Math.random(),
+                name: event.target.name.value,
+                age: event.target.age.value,
+                sex: event.target.sex.value,
+            }
+            // listStudents.push(newStudent);
+            // renderStudents(listStudents);
+        }
+
+        //hàm xoá
+        function handleDeleteStudents(studentID) {
+            for (let i in listStudents) {
+                if (listStudents[i].id == studentID) {
+                    listStudents.splice(i, 1)
+                    break
+                }
+            }
+            renderStudents(listStudents);
+        }
+
+        // hàm sửa
+        function handleUpdateStudent(studentID) {
+            for (let i in listStudents) {
+                if (listStudents[i].id == studentID) {
+                    listStudents[i] = {
+                        id: Date.now() * Math.random(),
+                        name: prompt("Nhập tên của hs mới", listStudents[i].name),
+                        age: prompt("Nhập tuổi của hs mới", listStudents[i].age),
+                        sex: prompt("Nhập giới tính của hs mới", listStudents[i].sex) == "true" ? true : false,
+                    }
+                    break
+                }
+            }
+
+            renderStudents(listStudents);
+        }
+
+
+    </script>
+</body>
+
+</html>
